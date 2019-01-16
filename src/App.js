@@ -1,26 +1,16 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import Img from './common/Caro';
+import Carousel from './common/Caro';
+// import ImgCarousel from './common/Carousel';
+// import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React seyed
-          </a>
-        </header>
-      </div>
+      <Img/>
     );
   }
 }
