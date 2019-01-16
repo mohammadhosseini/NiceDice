@@ -1,0 +1,26 @@
+.labels{
+    background-color: rgb(58, 102, 248);
+    width: fit-content;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px 5px;
+    margin: 5px ;
+}
+
+.input{
+    margin: 5px ;
+}
+
+.button{
+    background-color: rgb(52, 196, 52);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+
+}
+
+.form-container{
+    margin-left: 5%;
+
+}

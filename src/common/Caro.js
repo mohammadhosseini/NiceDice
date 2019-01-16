@@ -8,7 +8,7 @@ import styled, { css } from 'styled-components';
 import React, { Component } from 'react';
 
 
-const width = '300px', height='150px';
+const width = '600px', height='150px';
 const Container = styled.div`
   border: 1px solid red;
   position: relative;
