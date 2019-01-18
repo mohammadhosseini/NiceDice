@@ -1,0 +1,66 @@
+.nav-guest {
+  display: flex;
+  justify-content: space-between;
+  border:2px solid black;
+  text-align: center;
+  background-color: #27282b;
+  margin: 7px;
+}
+
+.nav-guest-flex {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 80px;
+  background-color: #27282b;
+  transition: all 0.3s;
+}
+
+.nav-guest-item {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 80px;
+  background-color: #27282b;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-right: 1px solid #bbb;
+}
+
+.nav-guest-item:hover{
+    background-color: #5c5c5c;
+}
+
+.nav-guest-link {
+  display: block;
+  width: 200px;
+  color:rgb(240, 239, 239);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.nav-guest-selected {
+  background-color: #666666;
+}
+
+.icons{
+  color:rgb(240, 239, 239);
+  font-size: 30px;
+}
+
+.nav-guest-login {
+  background-color: rgb(71, 71, 71);
+}
+
+.nav-guest-sign-up {
+  background-color: rgb(71, 71, 71);
+}
+
+.nav-guest-login:hover {
+  background-color: rgb(8, 56, 112);
+}
+
+.nav-guest-sign-up:hover {
+  background-color: rgb(167, 64, 17);
+}
+
+.home:hover {
+  background-color: rgb(19, 138, 39);
+}

@@ -1,0 +1,42 @@
+.summary {
+  border:2px solid black;
+  margin: 10px;
+  padding: 0 10px;
+}
+
+.profile-summary{
+  margin: 7px 8px;
+  font-size:20px;
+}
+
+.summary-items {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+}
+
+.summary-items .summary-item{
+  text-align: center;
+  display: inline-block;
+  text-decoration: none; 
+  color: grey;
+  transition: all 0.3s;
+}
+
+.summary-items .summary-item:hover {
+  color: black;
+}
+
+.summary-items .summary-item:active {
+  color: black;
+}
+
+.summary-item {
+  color: grey;
+  margin: 15px 0;
+}
+
+.summary-item:hover {
+  color: black;
+}

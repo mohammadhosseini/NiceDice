@@ -4,19 +4,25 @@ import logo from './logo.svg';
 import Img from './common/Caro';
 import './css/slider.css'
 import Carousel from './common/Caro';
-import Myform from './from/form';
+import Myform from './form/form';
 import './css/form.css'
 import SidebarExampleVisible from './common/sidebar'
 import SidebarExampleSidebar from './common/sidebar';
 import SideBar from './common/mysidebar';
 import './css/sidebar.css'
 import CommentBox from './commentBox/comment'
-import './css/comments.css'
+// import './css/comments.css'
 import { ICON_NAME } from "react-icons/fa";
+import Login from './view/pages/login';
+import SignUp from './view/pages/signup';
+import Home from './view/pages/Home'
+import {Switch} from "react-router-dom"
+import PropsRoute from "./const/PropsRoute"
+import PrivateRoute from "./const/PrivateRoute"
+import UserPage from "./view/pages/UserPage"
+import Users from "./view/pages/Users"
+// import './css/star.css'
 
-
-// import ImgCarousel from './common/Carousel';
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 
 class App extends Component {
@@ -27,13 +33,19 @@ class App extends Component {
   ];
     return (
       <div>
-        
-        {/* <div><Myform/></div> */}
         <div><SideBar/></div>
-        <div className="slider"><Img/></div>
-        {console.log(comments)}
+        <Switch>
+            <PropsRoute exact={true} path="/" component={Home}/>
+            <PrivateRoute exact={true} path="/users" component={Users}/>
+            <PropsRoute path="/login" component={Login}/>
+            <PropsRoute path="/sign-up" component={SignUp}/>
+            <PropsRoute path="/user/:id" component={UserPage}/>
+          </Switch>
+          {/* <div className="slider"><Img/></div> */}
+        {/* <div><Myform/></div> */}
         <div><CommentBox comments = {comments}/></div>
-        {/* <div><SidebarExampleVisible/></div> */}
+        {/* <div><Login/></div>
+        <div><SignUp/></div> */}
       </div>
     );
   }

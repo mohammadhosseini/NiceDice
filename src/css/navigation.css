@@ -1,0 +1,39 @@
+.nav {
+  display: flex;
+  border:2px solid black;
+  text-align: center;
+  margin: 7px;
+}
+.nav-item {
+  height: 80px;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 80px;
+  flex: 1 1 80px;
+  background-color: rgb(54, 53, 53);
+  cursor: pointer;
+  transition: all 0.3s;
+  border-right: 1px solid #bbb;
+
+}
+
+.nav-item:hover{
+  background-color: #5c5c5c;
+}
+
+.nav-link {
+  color:rgb(240, 239, 239);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.nav-selected {
+  background-color: #666666;
+}
+
+.home:hover {
+  background-color: rgb(19, 138, 39);
+}
+
+.exit:hover {
+  background-color: rgb(185, 23, 23);
+}

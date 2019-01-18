@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import { connect } from 'react-redux';  
 // import uuidv1 from "uuid";  
 // import { addComment } from "../../actions/index"  
+import '../css/comments.css'
 
 import { FaUserCircle } from "react-icons/fa";
 import StarRatingComponent from '../commentBox/starRating'
@@ -24,11 +25,11 @@ class Comment extends React.Component {
 		return (
 			<div className='comment'>
                 <div className='comment-author'>
-					<FaUserCircle className = 'icons'/>{this.props.author}
+					<FaUserCircle className = 'icon'/>{this.props.author}
 				</div>
 				<div className='comment-body'>
                     {this.props.children}
-                    <StarRatingComponent key={this.props.id} value={this.state.rating}  onStarClick={this.onStarClick.bind(this)}/>
+                    <div className='star'><StarRatingComponent key={this.props.id} value={this.state.rating}  onStarClick={this.onStarClick.bind(this)}/></div>
 				</div>
 			</div>
 		)
@@ -47,8 +48,6 @@ class CommentList extends React.Component {
 			.map(function(comment){
 				return (
 					<Comment author={comment.author} key={comment.id} id={comment.id}>
-                    		{console.log(comment.id)}
-
 						{comment.text}
 					</Comment>
 				);
@@ -93,10 +92,11 @@ class CommentForm extends React.Component {
 				<form onSubmit={this.handleSubmit}>  
                      <div  className="form-group mt-3">  
                         <label htmlFor="title"><strong>Enter your comments below</strong><br></br></label>  
-                        <textarea type="text" className="form-control"  id="title"  value={title} onChange={this.handleChange} />  
+                        <textarea type="text" className="form-control form"  id="title"  value={title} onChange={this.handleChange} />  
                         <br></br>
-                        <button type="submit" className="btn btn-success btn-lg mt-2">  
-                            SAVE  
+                        <button type="submit" className="button">
+						{/* btn btn-success btn-lg mt-2   */}
+                            Submit 
                         </button>  
                     </div>  
                 </form> 
@@ -116,7 +116,7 @@ class CommentBox extends React.Component {
 	render(){
 		return (
 			<div className='comment-box'>
-				<h1>Comments</h1>
+				<h1 className='title'>Comments</h1>
 				<CommentList comments={this.state.comments} />
 				<CommentForm id={1}/>
 			</div>

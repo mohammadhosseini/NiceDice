@@ -8,14 +8,14 @@ import styled, { css } from 'styled-components';
 import React, { Component } from 'react';
 
 
-const width = '600px', height='150px';
+const width = '600px', height='450px';
 const Container = styled.div`
   border: 1px solid red;
   position: relative;
   overflow: hidden;
   width: ${width};
   text-align: center;
-
+  margin: 10px;
 `;
 const Children  = styled.div`
   width: ${width};
@@ -74,19 +74,22 @@ render (){
         <Carousel>
             <Slide right>
             <div>
-                <h1>Seyed</h1>
+                <img src="https://www.profiletalent.com.au/wp-content/uploads/2017/05/profile-talent-ant-simpson-feature.jpg"/>
+                {/* <h1>Seyed</h1> */}
                 <p>Slide Description</p>
             </div>
             </Slide>
             <Slide right>
             <div>
-                <h1>Sina</h1>
+                <img src="https://static.makeuseof.com/wp-content/uploads/2015/11/perfect-profile-picture-all-about-face.jpg"/>
+                {/* <h1>Sina</h1> */}
                 <p>Slide Description</p>
             </div>
             </Slide>
             <Slide right>
             <div>
-                <h1>Alis</h1>
+                <img src="https://weneedfun.com/wp-content/uploads/2015/09/Cute-baby-girl-pics-for-facebook-profile-12.jpg"/>
+                {/* <h1>Alis</h1> */}
                 <p>Slide Description</p>
             </div>
             </Slide>

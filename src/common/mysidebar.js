@@ -8,19 +8,19 @@ export default props => {
         Filter
       </a>
 
-      <a className="menu-item" href="/laravel">
+      <a className="menu-item" href="/">
         Time of Design
       </a>
 
-      <a className="menu-item" href="/angular">
+      <a className="menu-item" href="/">
         Score
       </a>
 
-      <a className="menu-item" href="/react">
+      <a className="menu-item" href="/">
         Game Numbers
       </a>
 
-      <a className="menu-item" href="/vue">
+      <a className="menu-item" href="/">
         Game Numbers per day
       </a>
     </Menu>
