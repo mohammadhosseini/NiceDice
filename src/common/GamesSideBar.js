@@ -3,8 +3,7 @@ import '../css/navigation.css'
 import { FaHome } from 'react-icons/fa';
 
 
-
-export class SideBar extends React.Component{
+export class GamesSideBar extends React.Component{
   constructor(props){
     super(props)
     this.state={isSelected:''}
@@ -19,24 +18,24 @@ export class SideBar extends React.Component{
           <li className='title'>
               <a>Filter</a>
             </li>
-            <li className={this.state.isSelected === 'Profile' ? 'side-bar-selected':'side-bar-item'} onClick={()=>{this.selected('Profile')}}>
+            <li className={this.state.isSelected === 'Time of Design' ? 'side-bar-selected':'side-bar-item'} onClick={()=>{this.selected('Time of Design')}}>
               <a className='side-bar-link' href="#">
-                Profile
+                Time of Design
               </a>
             </li>
-            <li className={this.state.isSelected === 'Start Game' ? 'side-bar-selected':'side-bar-item'} onClick={()=>{this.selected('Start Game')}}>
+            <li className={this.state.isSelected === 'Score' ? 'side-bar-selected':'side-bar-item'} onClick={()=>{this.selected('Score')}}>
               <a className='side-bar-link' href="#" >
-                Start Game
+                Score
               </a>
             </li>
-            <li className={this.state.isSelected === 'Design Game' ? 'side-bar-selected':'side-bar-item'} onClick={()=>{this.selected('Design Game')}}>
+            <li className={this.state.isSelected === 'Game Numbers' ? 'side-bar-selected':'side-bar-item'} onClick={()=>{this.selected('Game Numbers')}}>
               <a className='side-bar-link' href="#">
-                Design Game
+                Game Numbers
               </a>
             </li>
-            <li className={this.state.isSelected === 'Users' ? 'side-bar-selected':'side-bar-item'} onClick={()=>{this.selected('Users')}}>
+            <li className={this.state.isSelected === 'Game Numbers Per Day' ? 'side-bar-selected':'side-bar-item'} onClick={()=>{this.selected('Game Numbers Per Day')}}>
               <a className='side-bar-link' href="#">
-                Users
+                Game Numbers Per Day
               </a>
             </li>
           </ul>

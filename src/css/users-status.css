@@ -1,7 +1,11 @@
 .online-users-status {
-  border:2px solid black;
+  border:2px solid rgb(146, 146, 146);
   margin: 10px;
   padding: 0 10px;
+  margin-left: 30%;
+  margin-right: 5%;
+  background-color: rgb(207, 207, 207);
+  border-radius: 1%;
 }
 
 .users-online-users {
@@ -12,5 +16,4 @@
 .online-users-status-container {
   display:flex;
   flex-wrap: wrap;
-  justify-content: space-around;
 }

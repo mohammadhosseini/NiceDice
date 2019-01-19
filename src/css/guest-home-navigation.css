@@ -5,6 +5,13 @@
   text-align: center;
   background-color: #27282b;
   margin: 7px;
+  border-radius: 2%;
+
+}
+
+.sidebar{
+  display: flex;
+  /* justify-content: start; */
 }
 
 .nav-guest-flex {
@@ -23,6 +30,7 @@
   cursor: pointer;
   transition: all 0.3s;
   border-right: 1px solid #bbb;
+  border-radius: 5%;
 }
 
 .nav-guest-item:hover{

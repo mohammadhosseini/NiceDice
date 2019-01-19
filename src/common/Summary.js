@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../css/summary.css'
+import '../css/summary.css'
 import { IoIosStarOutline } from 'react-icons/io';
 import { MdExtension } from "react-icons/md";
 import { MdEventSeat } from "react-icons/md";

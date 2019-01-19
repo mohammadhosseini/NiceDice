@@ -1,24 +1,30 @@
 .user-container{
   display:inline-block;
+  flex-direction: column;
   text-align: center;
-  flex:1 1;
-  margin: 10px 13%;
+  flex:1 1 7%;
+  max-width: 200px;
+  border: 2px solid black;
+  margin: 10px 2%;
+  padding: 10px 50px;
+  border-radius: 4%;
+
 }
 
 .user-container-detailed{
   border: 2px solid black;
   display:inline-block;
   text-align: center;
-  flex:1 1;
+  width: 13%;
   margin: 10px 13%; 
 }
 
 .user-image {
   width:90px;
   height:90px;
-  margin:auto;
+  margin: 30px auto;
   border: 2px solid black;
-  border-radius: 100px;
+  border-radius: 50%;
   object-fit: cover;
   display: block;
 }

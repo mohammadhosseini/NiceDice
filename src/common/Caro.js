@@ -1,9 +1,5 @@
 import makeCarousel from 'react-reveal/makeCarousel';
-// we'll need the Slide component for sliding animations
-// but you can use any other effect
 import Slide from 'react-reveal/Slide';
-// we'll use styled components for this tutorial
-// but you can use any other styling options ( like plain old css )
 import styled, { css } from 'styled-components';
 import React, { Component } from 'react';
 
@@ -14,13 +10,18 @@ const Container = styled.div`
   position: relative;
   overflow: hidden;
   width: ${width};
+  height: ${height};
   text-align: center;
   margin: 10px;
 `;
 const Children  = styled.div`
-  width: ${width};
-  position: relative;
-  height: ${height};
+  // width: ${width};
+  max-width : 80%;
+  // position: relative;
+  // height: ${height};
+  max-height : 60%;
+  align-items : center;
+  background-size : contain;
 `;
 const Arrow = styled.div`
   text-shadow: 1px 1px 1px #fff;
@@ -66,15 +67,14 @@ const CarouselUI = ({ position, total, handleClick, children }) => (
 );
 const Carousel = makeCarousel(CarouselUI);
 
-class Img extends Component {
+class Slider extends Component {
 
 render (){
     return(
-
         <Carousel>
             <Slide right>
             <div>
-                <img src="https://www.profiletalent.com.au/wp-content/uploads/2017/05/profile-talent-ant-simpson-feature.jpg"/>
+                <img className='image' src="https://www.profiletalent.com.au/wp-content/uploads/2017/05/profile-talent-ant-simpson-feature.jpg"/>
                 {/* <h1>Seyed</h1> */}
                 <p>Slide Description</p>
             </div>
@@ -93,8 +93,16 @@ render (){
                 <p>Slide Description</p>
             </div>
             </Slide>
+            <Slide right>
+            <div>
+                <img src="https://static.makeuseof.com/wp-content/uploads/2015/11/perfect-profile-picture-all-about-face.jpg"/>
+                {/* <h1>Sina</h1> */}
+                <p>Slide Description</p>
+            </div>
+            </Slide>
         </Carousel>
         );
     }
 }
-export default Img
+
+export default Slider

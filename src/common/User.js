@@ -3,7 +3,7 @@ import '../css/user.css'
 import {Link} from 'react-router-dom'
 
 
-const User = (props) => {
+const User =  (props) => {
   const {user} = props
   const {username, status, src, id, avgScore, friends,
     email, fullName, bornedAt, gender, password, detail} = user

@@ -10,6 +10,7 @@
 
 .input{
     margin: 5px ;
+    max-width: 50px;
 }
 
 .button{
@@ -21,6 +22,15 @@
 }
 
 .form-container{
-    margin-left: 5%;
+    margin-left: 30%;
+    margin-top: 2%;
 
+}
+
+.radio{
+    margin: 1%;
+}
+
+.radio-options{
+    margin: 1%;
 }

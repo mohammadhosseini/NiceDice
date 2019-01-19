@@ -118,7 +118,7 @@ class CommentBox extends React.Component {
 			<div className='comment-box'>
 				<h1 className='title'>Comments</h1>
 				<CommentList comments={this.state.comments} />
-				<CommentForm id={1}/>
+				{/* <CommentForm id={1}/> */}
 			</div>
 		);
 	}

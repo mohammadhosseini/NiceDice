@@ -28,6 +28,14 @@
 }
 .nav-selected {
   background-color: #666666;
+  height: 80px;
+  display: inline-block;
+  font-size: 25px;
+  line-height: 80px;
+  flex: 1 1 80px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-right: 1px solid #bbb;
 }
 
 .home:hover {

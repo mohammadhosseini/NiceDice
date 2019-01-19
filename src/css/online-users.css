@@ -1,7 +1,14 @@
 .online-users {
-  border:2px solid black;
+  border:2px solid rgb(146, 146, 146);
   margin: 10px;
   padding: 0 10px;
+  /* margin-left: 30%; */
+  /* margin-right: 5%; */
+  background-color: rgb(207, 207, 207);
+  border-radius: 1%;
+  display: flex;
+  flex: 1 1 70%;
+  
 }
 
 .profile-online-users {
@@ -11,6 +18,8 @@
 
 .online-users-container {
   display:flex;
+  flex-direction: row;
+  flex: 1 1 80%;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }

@@ -10,6 +10,7 @@ class Myform extends React.Component{
       
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleRadioChange = this.handleRadioChange.bind(this);
         }
       
     handleChange(event) {
@@ -31,9 +32,10 @@ class Myform extends React.Component{
         return {selectedValue: '1'};
       }
     
-    // handleChange(value) {
-    //     this.setState({selectedValue: value});
-    //   }
+    handleRadioChange(value) {
+        this.setState({selectedValue: value});
+        console.log(this.selectedValue);
+      }
       
     render() {
         return (
@@ -44,29 +46,27 @@ class Myform extends React.Component{
                     <input className='input' type="number" name="quantity" min="1" max="500" value={this.name} onChange={this.handleChange} />
                     <div className='labels'>2. "Current score" zero dice :</div>
                     <input className='input' type="number" name="quantity" min="1" max="6" value={this.name} onChange={this.handleChange} />
-                    <div className='labels'>3. Play with this number of dices:</div>
-                    <div>
-                    <RadioGroup
-                        name="dices"
-                        selectedValue={this.state.selectedValue}
-                        onChange={this.handleChange}>
-                        <label>
-                            <Radio value="1" />1
-                        </label>
-                        <label>
-                            <Radio value="2" />2
-                        </label>
-                        <label>
-                            <Radio value="3" />3
-                        </label>
-                        <label>
-                            <Radio value="4" />4
-                        </label>
-                    </RadioGroup>
-                        {/* <label><input type="radio" value="1" />1</label>
-                        <label><input type="radio" value="2" />2</label>
-                        <label><input type="radio" value="3" />3</label>
-                        <label><input type="radio" value="4" />4</label> */}
+                    <div className='labels'>3. Maximum times of Rolling Dice :</div>
+                    <input className='input' type="number" name="quantity" min="1" value={this.name} onChange={this.handleChange} />
+                    <div className='labels'>4. Number of dices:</div>
+                    <div className='radio'>
+                        <RadioGroup 
+                            name="dices"
+                            selectedValue={this.state.selectedValue}
+                            onChange={()=>{this.handleRadioChange(this.state.selectedValue)}}>
+                            <label className='radio-options'>
+                                <Radio value="1" />1
+                            </label>
+                            <label className='radio-options'>
+                                <Radio value="2" />2
+                            </label>
+                            <label className='radio-options'>
+                                <Radio value="3" />3
+                            </label>
+                            <label className='radio-options'>
+                                <Radio value="4" />4
+                            </label>
+                        </RadioGroup>
                     </div>
                     <br></br>
                     <input className='input button' type="submit" value="Save" />
