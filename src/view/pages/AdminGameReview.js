@@ -8,7 +8,7 @@ import CommentBox from '../../commentBox/comment';
 class AdminGR extends React.Component{
  render(){
     var comments = [
-        { id: '1', author: 'Ali', text: 'Blah Blah Blah' , stars : 3},
+        { id: '1', author: 'Ali', text: 'Blah Blah Blahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasdasdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' , stars : 3},
         { id: '2', author: 'Sina', text: 'HaHaHaHa' , stars : 5}
     ];
    return(

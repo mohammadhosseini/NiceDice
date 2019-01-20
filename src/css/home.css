@@ -4,3 +4,22 @@
     justify-content: center;
     margin-right: 100px;
 }
+
+.guest-home-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+}
+
+.user-home-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+}
+.app{
+    background-color: black;
+}

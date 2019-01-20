@@ -20,7 +20,10 @@ class Comment extends React.Component {
 
     onStarClick(nextValue, prevValue, name) {
         this.setState({rating: nextValue});
-      }
+	  }
+	onButtonClick(value) {
+		// this.setState({rating: nextValue});
+	  }
 	render(){
 		return (
 			<div className='comment'>
@@ -29,7 +32,19 @@ class Comment extends React.Component {
 				</div>
 				<div className='comment-body'>
                     {this.props.children}
-                    <div className='star'><StarRatingComponent key={this.props.id} value={this.state.rating}  onStarClick={this.onStarClick.bind(this)}/></div>
+				</div>
+				<div>
+				<div className='star'>
+					<StarRatingComponent key={this.props.id} value={this.state.rating}  onStarClick={this.onStarClick.bind(this)}/>
+				</div>
+				<div>
+					<button type='button' className='button accept' value='accept' onClick={this.onButtonClick(this.value)}>
+					Accept
+					</button>
+					<button type='button' className='button decline' value='decline' onClick={this.onButtonClick(this.value)}>
+					Decline
+					</button>
+				</div>
 				</div>
 			</div>
 		)

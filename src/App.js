@@ -26,6 +26,7 @@ import Design from './view/pages/Design'
 import Admin from './view/pages/AdminPage';
 import AdminGR from './view/pages/AdminGameReview';
 import AdminUR from './view/pages/AdminUserReview'
+import GuestGames from './view/pages/GuestGames'
 // import './css/star.css'
 
 
@@ -49,6 +50,8 @@ class App extends Component {
             <PropsRoute path="/admin" component={Admin}/>
             <PropsRoute path="/admingamereview" component={AdminGR}/>
             <PropsRoute path="/adminuserreview" component={AdminUR}/>
+            <PropsRoute path="/userpage" component={UserPage}/>
+            <PropsRoute path="/guestgames" component={GuestGames}/>
           </Switch>
 
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../css/signup.css'
+import { GuestHomeNavigation } from '../../common/GuestHomeNavigation';
 
 class SignUp extends React.Component {
   constructor(props){
@@ -16,6 +17,8 @@ class SignUp extends React.Component {
    }
   render() {
       return (
+        <React.Fragment>
+          <GuestHomeNavigation/>
           <div className='sign-up-form-container'>
           <div className='sign-up-field-container'>
             <label className='sign-up-form-label'>First Name: </label>
@@ -66,9 +69,11 @@ class SignUp extends React.Component {
                 />
             <br/>
             </div>
+            <br/>
             <input className='sign-up-form-submit' type='submit' value='Register'/>
             <br/>
           </div>
+          </React.Fragment>
       );
     }
   }

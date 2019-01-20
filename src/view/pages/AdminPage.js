@@ -8,7 +8,7 @@ class Admin extends React.Component{
    return(
     <React.Fragment>
     <AdminNavigation/>
-    <div className='home-container'>
+    <div className='user-home-container'>
         <div className="slider"><Slider/></div>
     </div>
     </React.Fragment>

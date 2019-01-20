@@ -9,13 +9,14 @@ const Game =  (props) => {
 
   return(
     <div className='games-container'>
+      <Link to={`/user/${id}`}>
         <p>{username}</p>
         <p>Score: {Score}</p>
         <p>Played: {played}</p>
-        <Link to={`/user/${id}`}>
-            <button>Play Game</button>
-        </Link>      
+            {/* <button>Play Game</button> */}
+      </Link>      
     </div>
+
     
   )
 }

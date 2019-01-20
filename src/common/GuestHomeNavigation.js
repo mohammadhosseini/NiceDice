@@ -16,9 +16,9 @@ export class GuestHomeNavigation extends React.Component{
                 </Link>
               </div>
               <div className='nav-guest-item'>
-                <a className='nav-guest-link' href="#">
-                  Start Game
-                </a>
+                <Link to='/guestgames' className='nav-guest-link'>
+                  Games
+                </Link>
               </div>
             </div>
             <div className='nav-guest-flex'>

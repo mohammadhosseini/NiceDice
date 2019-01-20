@@ -8,11 +8,11 @@ class Users extends React.Component{
  render(){
    return(
     <React.Fragment>
-    <Navigation/>
-    <div className='home-container'>
-      <UsersSideBar/>
-      <OnlineUsers/>
-    </div>
+      <Navigation/>
+      <div className='home-container'>
+        <UsersSideBar/>
+        <OnlineUsers/>
+      </div>
     </React.Fragment>
    )
  } 

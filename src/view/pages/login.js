@@ -1,5 +1,7 @@
 import React from 'react'
 import '../../css/login.css'
+import { gunzipSync } from 'zlib';
+import { GuestHomeNavigation } from '../../common/GuestHomeNavigation';
 
 class Login extends React.Component {
   constructor(props){
@@ -11,6 +13,8 @@ class Login extends React.Component {
    }
   render() {
       return (
+        <React.Fragment>
+          <GuestHomeNavigation/>
           <div className='login-form-container'>
             <p className='login-form-label'>Username: </p>
             <input
@@ -33,6 +37,7 @@ class Login extends React.Component {
                 <input className='login-form-submit' type='submit' value='Login'/>
             <br/>
           </div>
+        </React.Fragment>
       );
     }
   }

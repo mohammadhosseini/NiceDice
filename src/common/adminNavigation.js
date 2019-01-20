@@ -1,38 +1,37 @@
 import React from 'react'
 import '../css/navigation.css'
-import { FaHome } from 'react-icons/fa';
+import { FaHome , FaSignOutAlt} from 'react-icons/fa';
 // import SideBar from '../common/mysidebar';
+import {Link} from 'react-router-dom'
+
 
 export class AdminNavigation extends React.Component{
   constructor(props){
     super(props)
     this.state={isSelected:''}
-  }
+  } 
   selected(target){
     this.setState({isSelected:target})
   }
   render(){
     return (
         <div>
-        <nav>
-          <ul className="nav">
-            <li className={this.state.isSelected === 'User Review' ? 'nav-selected':'nav-item'} onClick={()=>{this.selected('User Review')}}>
-              <a className='nav-link' href="#">
-                User Review
-              </a>
-            </li>
-            <li className={this.state.isSelected === 'Game Review' ? 'nav-selected':'nav-item'} onClick={()=>{this.selected('Game Review')}}>
-              <a className='nav-link' href="#">
-                Game Review
-              </a>
-            </li>  
-            <li className={this.state.isSelected === 'exit' ? 'nav-selected':'nav-item exit'} onClick={()=>{this.selected('Exit')}}>
-              <a className='nav-link' href="#">
-                Exit
-              </a>
-            </li>
-          </ul>
-        </nav>
+          <nav>
+            <div className='nav'>
+                  <Link to='/admin' className={this.state.isSelected === 'Home' ? 'nav-selected home nav-link':'nav-item home nav-link'} onClick={()=>{this.selected('Home')}}>
+                    <FaHome className = 'icons'/>
+                  </Link>
+                  <Link to='/adminuserreview' className={this.state.isSelected === 'User Review' ? 'nav-selected nav-link':'nav-item nav-link'} onClick={()=>{this.selected('User Review')}}>
+                    User Review
+                  </Link>
+                  <Link to='/admingamereview' className={this.state.isSelected === 'Game Review' ? 'nav-selected  nav-link':'nav-item nav-link'} onClick={()=>{this.selected('Game Review')}}>
+                    Game Review
+                  </Link>
+                  <Link to='/' className={this.state.isSelected === 'Exit' ? 'nav-selected exit nav-link':'nav-item exit nav-link'} onClick={()=>{this.selected('Exit')}}>
+                    <FaSignOutAlt className = 'icons'/>
+                  </Link>
+            </div>
+          </nav>
         </div>
     );
   }

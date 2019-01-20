@@ -1,4 +1,8 @@
 import React from 'react'
+import Slider from '../../common/Caro';
+import { Summary } from '../../common/Summary';
+import {Navigation} from '../../common/Navigation'
+import {OnlineUsers} from '../../common/OnlineUsers'
 
 class UserPage extends React.Component{
   constructor(props) {
@@ -10,9 +14,14 @@ class UserPage extends React.Component{
   render(){
     const {id} = this.state
    return(
-     <div>
-       user page {id}
-     </div>
+      <React.Fragment>
+        <Navigation/>
+        <div className='user-home-container'>
+          <Slider/>
+          <Summary/>
+          <OnlineUsers/>
+        </div>
+    </React.Fragment>
    )
  } 
 }

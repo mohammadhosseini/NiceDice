@@ -83,6 +83,7 @@ export class OnlineUsers extends React.Component{
     const {users} = this.state
     return (
       <div className='online-users'>
+        OnlineUsers
         <div className='online-users-container'>
         {users.map(user => <User key={user.id} user={user}/>)
         }
