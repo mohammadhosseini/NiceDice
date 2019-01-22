@@ -24,7 +24,7 @@ class Myform extends React.Component{
     }
       
     handleSubmit(event) {
-        alert('A name was submitted: ' + this.state.value);
+        alert('Game Designed' + this.state.value);
         event.preventDefault();
     }
 
@@ -39,38 +39,40 @@ class Myform extends React.Component{
       
     render() {
         return (
-            <div className='form-container'>
+            <div className='design-form-body'>
                 <p>Let's design the Game:</p>
+                <div className='design-form-container'>
                 <form onSubmit={this.handleSubmit}>
-                    <div className='labels'>1. Maximum of Scores</div>
-                    <input className='input' type="number" name="quantity" min="1" max="500" value={this.name} onChange={this.handleChange} />
-                    <div className='labels'>2. "Current score" zero dice :</div>
-                    <input className='input' type="number" name="quantity" min="1" max="6" value={this.name} onChange={this.handleChange} />
-                    <div className='labels'>3. Maximum times of Rolling Dice :</div>
-                    <input className='input' type="number" name="quantity" min="1" value={this.name} onChange={this.handleChange} />
-                    <div className='labels'>4. Number of dices:</div>
-                    <div className='radio'>
+                    <div className='design-labels'>1. Maximum of Scores</div>
+                    <input name='max-score' className='design-input' type="number" name="quantity" min="1" max="500" value={this.name} onChange={this.handleChange} />
+                    <div className='design-labels'>2. "Current score" zero dice :</div>
+                    <input name='zero-dice' className='design-input' type="number" name="quantity" min="1" max="6" value={this.name} onChange={this.handleChange} />
+                    <div className='design-labels'>3. Maximum times of Rolling Dice :</div>
+                    <input name='max-rolling' className='design-input' type="number" name="quantity" min="1" value={this.name} onChange={this.handleChange} />
+                    <div className='design-labels'>4. Number of dices:</div>
+                    <div className='design-radio'>
                         <RadioGroup 
                             name="dices"
                             selectedValue={this.state.selectedValue}
                             onChange={()=>{this.handleRadioChange(this.state.selectedValue)}}>
-                            <label className='radio-options'>
+                            <label className='design-radio-options'>
                                 <Radio value="1" />1
                             </label>
-                            <label className='radio-options'>
+                            <label className='design-radio-options'>
                                 <Radio value="2" />2
                             </label>
-                            <label className='radio-options'>
+                            <label className='design-radio-options'>
                                 <Radio value="3" />3
                             </label>
-                            <label className='radio-options'>
+                            <label className='design-radio-options'>
                                 <Radio value="4" />4
                             </label>
                         </RadioGroup>
                     </div>
                     <br></br>
-                    <input className='input button' type="submit" value="Save" />
+                    <input className='design-input design-save-button' type="submit" value="Save" />
                 </form>
+                </div>
             </div>
         );
     }
