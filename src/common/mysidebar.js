@@ -16,7 +16,7 @@ export class SideBar extends React.Component{
     return (
         <div className="side-bar">
           <ul>
-          <li className='title'>
+          <li className='side-bar-title'>
               <a>Filter</a>
             </li>
             <li className={this.state.isSelected === 'Profile' ? 'side-bar-selected':'side-bar-item'} onClick={()=>{this.selected('Profile')}}>

@@ -15,7 +15,7 @@ export class GamesSideBar extends React.Component{
     return (
         <div className="side-bar">
           <ul>
-          <li className='title'>
+          <li className='side-bar-title'>
               <a>Filter</a>
             </li>
             <li className={this.state.isSelected === 'Time of Design' ? 'side-bar-selected':'side-bar-item'} onClick={()=>{this.selected('Time of Design')}}>

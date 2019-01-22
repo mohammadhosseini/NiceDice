@@ -8,21 +8,19 @@ const User =  (props) => {
   const {username, status, src, id, avgScore, friends,
     email, fullName, bornedAt, gender, password, detail} = user
 
-  const hideDetails = () => {
-    return !detail
-  }
+  const isOnline = (s) => (s === 'Online')
+  
   return(
-    hideDetails() ?
-    <Link to={`/user/${id}`} className='user-container'>
+    isOnline(status) ?
+    <Link to={`/profile/${id}`} className='user-container-online'>
       <img className='user-image' src={src} alt='user-profile'/>
       <p>{username}</p>
       <p>{status}</p>
     </Link> : 
-    <Link to={`/user/${id}`} className='user-container-detailed'>
-    <img className='user-image' src={src} alt='user-profile'/>
-    <p>{username}</p>
-    <p>{status}</p>
-    <p>Score: {avgScore}</p>
+    <Link to={`/profile/${id}`} className='user-container-offline'>
+      <img className='user-image' src={src} alt='user-profile'/>
+      <p>{username}</p>
+      <p>{status}</p>
     </Link>
   )
 }
