@@ -11,7 +11,7 @@ class Users extends React.Component{
       <Navigation/>
       <div className='home-container'>
         <UsersSideBar/>
-        <OnlineUsers/>
+        <UsersStatus/>
       </div>
     </React.Fragment>
    )

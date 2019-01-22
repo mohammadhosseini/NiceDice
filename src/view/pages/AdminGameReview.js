@@ -2,7 +2,7 @@ import React from 'react'
 import { AdminNavigation } from '../../common/adminNavigation'
 import Slider from '../../common/Caro';
 import {AdminSideBar} from '../../common/adminSideBar'
-import CommentBox from '../../commentBox/comment';
+import AdminCommentBox from '../../commentBox/adminComment';
 
 
 class AdminGR extends React.Component{
@@ -14,9 +14,9 @@ class AdminGR extends React.Component{
    return(
     <React.Fragment>
     <AdminNavigation/>
-    <div className='home-container'>
+    <div className='admin-home-container'>
         <AdminSideBar className='side-bar'/>
-        <CommentBox className='comment-box' comments = {comments}/>
+        <AdminCommentBox className='comment-box' comments = {comments}/>
     </div>
     </React.Fragment>
    )

@@ -1,8 +1,10 @@
 import React from 'react'
-import Slider from '../../common/Caro';
+import Slider from '../../common/Slider';
 import { Summary } from '../../common/Summary';
 import {Navigation} from '../../common/Navigation'
 import {OnlineUsers} from '../../common/OnlineUsers'
+import CommentBox from '../../commentBox/comment';
+import { UsersStatus } from './UsersStatus';
 
 class UserPage extends React.Component{
   constructor(props) {
@@ -16,10 +18,10 @@ class UserPage extends React.Component{
    return(
       <React.Fragment>
         <Navigation/>
+        <Slider className='slider'/>
         <div className='user-home-container'>
-          <Slider/>
           <Summary/>
-          <OnlineUsers/>
+          <UsersStatus/>
         </div>
     </React.Fragment>
    )

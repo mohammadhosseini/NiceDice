@@ -29,7 +29,7 @@ export class UsersStatus extends React.Component{
         {
           id:3,
           username: 'user3',
-          status:'Online',
+          status:'Offline',
           src:'https://weneedfun.com/wp-content/uploads/2015/09/Cute-baby-girl-pics-for-facebook-profile-12.jpg',
           detail: true,
           avgScore: 100,
@@ -65,11 +65,10 @@ export class UsersStatus extends React.Component{
   render(){
     const {users} = this.state
     return (
-      <div className='online-users-status'>
+      <div className='online-users'>
         <div className='users-online-users'>
-        Online Users
         </div>
-        <div className='online-users-status-container'>
+        <div className='online-users-container'>
         {users.map(user => <User key={user.id} user={user}/>)}
         </div>
       </div>
