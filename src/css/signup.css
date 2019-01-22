@@ -3,13 +3,15 @@
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin : 0  10% ;
+    box-shadow: 0 8px 160px 0 rgba(129, 129, 129, 0.2), 0 10px 20px 0 rgba(175, 175, 175, 0.19);
+  padding: 30px;
+  margin : 30px  30% ;
   }
   
   .sign-up-field-container {
     display: flex;
     justify-content: space-around;
-    flex:1 1 50%;
+    flex:1 1 60%;
     align-items: center;
     /* margin: 0 10px; */
   }
@@ -32,6 +34,15 @@
     box-sizing: border-box;
   }
   
+  .sign-up-form-input-radio {
+    flex: 1 ;
+    /* padding: 12px 20px; */
+    /* margin: 8px 0; */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
   .sign-up-form-submit {
     background-color: #4CAF50;
     color: white;
@@ -43,7 +54,9 @@
     /* flex:1 1; */
   }
 
-
+.register-margin{
+  margin-left: 250px;
+}
  
   .image {
     width: 100%;

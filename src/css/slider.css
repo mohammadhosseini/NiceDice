@@ -1,7 +1,18 @@
 .slider{
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    flex: 1 1 70%;
-    /* flex-wrap: wrap; */
+    box-shadow: 0 8px 10px 0 rgba(128, 128, 128, 0.274), 0 10px 20px 0 rgba(112, 112, 112, 0.274);
+    border: 3px solid rgba(136, 136, 136, 0.575);
+    border-radius: 10px;
+    margin : 20px 0;
+}
+
+.slider-image{
+    height: 300px;
+    object-fit: contain;
+}
+
+.modal{
+    /* z-index: 10000; */
+    /* background-color: black; */
+    /* width: 200px ; */
+    
 }

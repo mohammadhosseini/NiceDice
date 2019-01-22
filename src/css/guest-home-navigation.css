@@ -1,11 +1,14 @@
 .nav-guest {
   display: flex;
   justify-content: space-between;
-  border:2px solid black;
+  /* border:2px solid black; */
+  /* box-shadow: 0 8px 10px 0 rgba(128, 128, 128, 0.274), 0 10px 20px 0 rgba(112, 112, 112, 0.274); */
   text-align: center;
-  background-color: #27282b;
+  background-color: transparent;
   margin: 7px;
-  border-radius: 2%;
+  border-radius: 10px;
+  border-bottom: 2px solid #3f3f3f;
+  padding-bottom: 10px;
 
 }
 
@@ -18,7 +21,7 @@
   display: inline-block;
   font-size: 20px;
   line-height: 80px;
-  background-color: #27282b;
+  background-color: transparent;
   transition: all 0.3s;
 }
 
@@ -29,8 +32,10 @@
   background-color: #27282b;
   cursor: pointer;
   transition: all 0.3s;
-  border-right: 1px solid #bbb;
-  border-radius: 5%;
+  /* border-right: 1px solid #bbb; */
+  box-shadow: 0 8px 10px 0 rgba(128, 128, 128, 0.274), 0 10px 20px 0 rgba(112, 112, 112, 0.274);
+
+  border-radius: 10px;
 }
 
 .nav-guest-item:hover{

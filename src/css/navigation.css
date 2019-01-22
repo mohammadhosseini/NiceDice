@@ -1,8 +1,15 @@
 .nav {
   display: flex;
-  border:2px solid black;
+  justify-content: space-between;
+  /* box-shadow: 0 8px 10px 0 rgba(128, 128, 128, 0.274), 0 10px 20px 0 rgba(112, 112, 112, 0.274); */
+  /* border:2px solid black; */
   text-align: center;
   margin: 7px;
+  background-color: transparent;
+  margin: 7px;
+  border-radius: 10px;
+  border-bottom: 2px solid #3f3f3f;
+  padding-bottom: 10px;
 }
 .nav-item {
   height: 80px;
@@ -13,7 +20,9 @@
   background-color: rgb(54, 53, 53);
   cursor: pointer;
   transition: all 0.3s;
-  border-right: 1px solid #bbb;
+  /* border-right: 1px solid #bbb; */
+  box-shadow: 5px 8px 10px 0 rgba(128, 128, 128, 0.274), 0 10px 20px 0 rgba(112, 112, 112, 0.274);
+  border-radius: 10px;
 
 }
 
@@ -22,20 +31,22 @@
 }
 
 .nav-link {
+  width: 200px;
   color:rgb(240, 239, 239);
   text-decoration: none;
   transition: all 0.3s;
 }
 .nav-selected {
-  background-color: #666666;
   height: 80px;
   display: inline-block;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 80px;
   flex: 1 1 80px;
+  background-color: rgb(54, 53, 53);
   cursor: pointer;
   transition: all 0.3s;
-  border-right: 1px solid #bbb;
+  box-shadow: 5px 8px 10px 0 rgba(128, 128, 128, 0.274), 0 10px 20px 0 rgba(112, 112, 112, 0.274);
+  border-radius: 10px;
 }
 
 .home:hover {

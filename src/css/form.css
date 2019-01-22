@@ -1,36 +1,53 @@
-.labels{
+.design-form-body{
+    box-shadow: 0 8px 160px 0 rgba(129, 129, 129, 0.2), 0 10px 20px 0 rgba(175, 175, 175, 0.19);
+    padding: 20px;
+    margin : 30px  35% ;
+}
+.design-form-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: left
+
+}
+.design-labels{
     background-color: rgb(58, 102, 248);
     width: fit-content;
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 5px 5px;
-    margin: 5px ;
+    padding: 10px 15px;
+    margin: 5px 15px ;
 }
 
-.input{
-    margin: 5px ;
-    max-width: 50px;
+.design-input{
+    flex: 1 ;
+    padding: 15px 15px;
+    margin: 15px 15px;
+    width: 150px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
 }
 
-.button{
+.design-save-button{
     background-color: rgb(52, 196, 52);
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 10px;
+    width: 100px;
+    cursor: pointer;
+    font-size: 15px;
+
 
 }
 
-.form-container{
-    margin-left: 30%;
-    margin-top: 2%;
-
+.design-radio{
+    margin-top: 20px ;
 }
 
-.radio{
-    margin: 1%;
-}
+.design-radio-options{
+    margin: 15px 15px;
+    cursor: pointer;
 
-.radio-options{
-    margin: 1%;
 }

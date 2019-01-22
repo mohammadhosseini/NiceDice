@@ -1,7 +1,10 @@
 .summary-container {
-  border:2px solid black;
+  border: 3px solid rgba(136, 136, 136, 0.575);
+  box-shadow: 0 8px 10px 0 rgba(128, 128, 128, 0.274), 0 10px 20px 0 rgba(112, 112, 112, 0.274);
   width: 95%;
-  border-radius: 1%;
+  border-radius: 5px;
+  margin : 20px 0;
+
 }
 .summary {
   display: flex;

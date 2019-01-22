@@ -4,6 +4,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  box-shadow: 0 8px 160px 0 rgba(129, 129, 129, 0.2), 0 10px 20px 0 rgba(175, 175, 175, 0.19);
+  padding: 20px;
+  margin : 30px  35% ;
+
 }
 
 .login-form-label {

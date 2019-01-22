@@ -1,11 +1,12 @@
 .online-users {
-  border:2px solid rgb(146, 146, 146);
-  margin: 10px;
+  box-shadow: 5px 8px 10px 0 rgba(128, 128, 128, 0.274), 0 10px 20px 0 rgba(112, 112, 112, 0.274);
+  /* border:2px solid rgb(146, 146, 146); */
+  margin : 8px 10px;
   padding: 0 10px;
   /* margin-left: 30%; */
   /* margin-right: 5%; */
   background-color: rgb(207, 207, 207);
-  border-radius: 1%;
+  border-radius: 10px;
   /* display: flex; */
   flex: 1 1 70%;
   width: 95%;
@@ -22,5 +23,5 @@
   flex-direction: row;
   flex: 1 1 80%;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center; */
 }
